@@ -1,0 +1,126 @@
+
+
+.section{
+    height: 600px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+
+    h1 {
+        font-weight: bold;
+        color: #222222;
+        margin-top: 50px;
+    }
+
+    p{
+        color: #8e8e8e;
+    }
+    
+    li {
+        font-weight: bold;
+        color: #222222;
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 16px;
+        transition: 0.5s;
+    }
+    
+    .arrow {
+        width: 20px;
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        padding-left: 150px;
+        
+    }
+
+    .div1 p{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .div1 {
+        margin: 0 auto;
+        width: 500px;
+        text-align: center;
+    }
+
+    .div2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        height: 400px;
+    }
+
+    .div2 div{
+        width: 600px;
+        height: 300px;
+        text-align: center;
+        background-color: white;
+        margin-left: 20px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-around;
+        align-items: stretch;
+    } 
+    .div2 p {
+        font-size: 12px;
+        color: #8e8e8e;
+        margin-top: 15px;
+        padding: 0 50px;
+        text-align: left;
+    }
+}
+
+.hidden {
+    display: none;
+    } 
+
+@media only screen and (max-width: 1350px) {
+    .section .div2{
+        display: flex;
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section .div2 div {
+        width: 80%;
+    }
+    .div2 p{
+        align-items: center;
+    }     
+    .section{
+            font-size: 18px;
+            height: 800px;
+    }
+    }
+
+    @media only screen and (max-width: 700px){
+        .section .div1 p {
+            margin-bottom: 120px;
+        }
+    }
+
+    @media only screen and (max-width: 680px){
+        .section{
+            li{
+                font-size: 10px;
+            }
+            .div1 p{
+                font-size: 8px;
+                margin-bottom:50px;
+            }
+            button{
+                display: none;
+            }
+            .div1{
+                width: 80%;
+            }
+        }
+    }
